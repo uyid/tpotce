@@ -7,6 +7,6 @@ function fuCLEANUP {
 trap fuCLEANUP EXIT
 
 # Download updated translation maps
-cd /etc/listbot 
-git pull --all --depth=1
+#cd /etc/listbot
+#git pull --all --depth=1
 cd /
