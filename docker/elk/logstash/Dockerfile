@@ -40,6 +40,7 @@ RUN sed -i 's/dl-cdn/dl-2/g' /etc/apk/repositories && \
     chown -R logstash:logstash /usr/share/logstash && \
     chown -R logstash:logstash /etc/listbot && \
     chmod 755 /usr/bin/update.sh && \
+    update.sh && \
 
 # Clean up
     apk del --purge aria2 && \
@@ -52,4 +53,4 @@ HEALTHCHECK --retries=10 CMD curl -s -XGET 'http://127.0.0.1:9600'
 
 # Start logstash
 #USER logstash:logstash
-CMD update.sh && exec /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/logstash.conf --config.reload.automatic --java-execution
+CMD exec /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/logstash.conf --config.reload.automatic --java-execution

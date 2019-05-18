@@ -1,5 +1,5 @@
 # tpot configuration file
 # myCONF_TPOT_FLAVOR=[STANDARD, SENSOR, INDUSTRIAL, COLLECTOR, NEXTGEN, LEGACY]
 myCONF_TPOT_FLAVOR='STANDARD'
-myCONF_WEB_USER='webuser'
-myCONF_WEB_PW='w3b$ecret'
+myCONF_WEB_USER='t0p3ec'
+myCONF_WEB_PW='y!Hblsqt'
